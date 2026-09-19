@@ -1,0 +1,82 @@
+
+```
+flowchart TD
+    A[Computer powers on but Windows won't boot] --> B{Correct boot device selected?}
+
+    B -->|No| C[Correct boot order]
+    B -->|Yes| D[Check RAM]
+
+    D --> E{RAM okay?}
+    E -->|No| F[Test or replace RAM]
+    E -->|Yes| G{Is Windows drive detected?}
+
+    G -->|No| H[Restart and check BIOS/UEFI]
+    G -->|Yes| I[Check BIOS/UEFI boot settings]
+
+    H --> J{Drive detected in BIOS/UEFI?}
+    J -->|No| K[Investigate drive or connection]
+    J -->|Yes| I
+
+    I --> L{Boot settings correct?}
+    L -->|No| M[Correct boot settings and restart]
+    L -->|Yes| N{Does an error message appear?}
+
+    N -->|Yes| O[Identify error and investigate its cause]
+    O --> P[Apply appropriate solution]
+    P --> Q[Restart and verify Windows boots]
+
+    N -->|No| R[Try Windows Recovery Environment]
+    R --> S{Recovery works?}
+    S -->|Yes| T[Use recovery tools to troubleshoot Windows]
+    S -->|No| U[Investigate deeper hardware or boot issues]
+
+    C --> Q
+    F --> Q
+    M --> Q
+    T --> Q
+    ```
+    
+
+    Computer powers on but Windows won't boot
+                  │
+                  ▼
+     Is the correct boot device selected?
+             /              \
+           No                Yes
+           │                  │
+     Correct boot             ▼
+       order             Check RAM
+                            │
+                       ┌────┴────┐
+                     Faulty      OK
+                       │          │
+                  Test/replace    ▼
+                    RAM       Is the Windows
+                              drive detected?
+                              /          \
+                            No            Yes
+                            │              │
+                     Restart and       Check BIOS/
+                     check BIOS/UEFI   UEFI settings
+                            │              │
+                            ▼         ┌────┴────┐
+                     Is the drive    Incorrect  Correct
+                     detected?          │         │
+                        / \         Correct       ▼
+                      No   Yes      settings   Does an error
+                      │     │          │       message appear?
+                 Investigate  Continue  │       /          \
+                 drive/connection      restart  Yes          No
+                                               │              │
+                                        Identify error    Try Windows
+                                        and investigate   Recovery
+                                        its cause         Environment
+                                               │              │
+                                               ▼         ┌────┴────┐
+                                         Apply fix     Recovery   Recovery
+                                               │         works    fails
+                                               ▼           │         │
+                                           Restart       Use       Investigate
+                                           and verify   recovery   deeper
+                                           Windows      tools      hardware/
+                                           boots                    boot issues
