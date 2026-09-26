@@ -66,9 +66,8 @@ The MAC address is a hardware-level identifier for the network adapter. The IPv4
 - BIOS Version/Date: Dell Inc. A01, 5/9/2013
 - BIOS Mode: Legacy
 
-The BIOS is firmware that initializes and checks the computer's hardware during the startup process and helps begin the operating system boot process.
+The BIOS is firmware that initializes and checks the computer's hardware during the startup process and helps begin the operating system boot process. My computer uses Dell BIOS version A01, dated 5/9/2013, and is configured to use Legacy BIOS mode rather than UEFI mode.
 
-My computer uses Dell BIOS version A01, dated 5/9/2013, and is configured to use Legacy BIOS mode rather than UEFI mode.
 ## 9. Connected Peripherals
 
 No external peripherals are currently connected to the computer.
