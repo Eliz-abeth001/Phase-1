@@ -61,6 +61,7 @@ Wi-Fi IP Configuration includes;
 The Wi-Fi adapter allows the computer to connect to a wireless network. The Ethernet adapter provides a wired network connection when an Ethernet cable is used.
 
 The MAC address is a hardware-level identifier for the network adapter. The IPv4 address identifies the computer on its current network. The subnet mask helps determine which devices are on the local network, while the default gateway provides a path to other networks. DHCP automatically provides network configuration information and DNS helps translate domain names into IP addresses.
+
 ## 8. BIOS/UEFI
 - BIOS Version/Date: Dell Inc. A01, 5/9/2013
 - BIOS Mode: Legacy
