@@ -8,8 +8,8 @@
 - I then checked the memory and storage. The host computer has 4.0 GB of DDR3 RAM and a 466 GB HDD, with approximately 296 GB of storage available. These resources helped me determine how much CPU, memory, and storage I could allocate to the virtual machines without unnecessarily too much load on my host machine.
 - After confirming the capabilities and limitations of my host computer, I proceeded to configure the two virtual machines.
 - Snapshots was takeen on the two virtual machines but i took it after the configuration.
-## 2 Window Virtual Machine build Up
 
+## 2 Window Virtual Machine build Up
 - CPU: 1 Processor
 - RAM: 1.5GB
 - Disk:50 GB
