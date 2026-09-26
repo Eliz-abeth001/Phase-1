@@ -96,53 +96,51 @@ I would document that the USB device was detected by Windows but did not have a 
 
 ## T-004 - Laptop Overheating and Unexpected Shutdown
 
-1. Identify the Problem
+Issue:
+The laptop becomes unusually hot and sometimes shuts itself down.
 
-The employee reported that the laptop becomes very hot and, after some time, suddenly shuts down.
+- Identify the Problem
 
-I would ask the user questions about when the laptop becomes hot, what applications they are using, where they normally place the laptop, how often the shutdown occurs, and whether they notice unusual fan activity.
+I would confirm when the overheating and shutdown occur then check whether the issue happens during normal use, when running demanding applications, or after the laptop has been running for a long time.
 
-2. Establish a Theory of Probable Cause
+- Establish a Theory of Probable Cause
 
-I would investigate both hardware and software causes.
+Hardware causes:
 
-Possible hardware causes include restricted airflow from placing the laptop on a bed, blocked ventilation openings, dust buildup, or a cooling fan that is not working properly.
+* Dust or blocked ventilation.
+* Faulty cooling fan.
+* Poor heat dissipation or degraded thermal paste.
+* Battery or power-related hardware problems.
 
-Possible software causes include a program or process using unusually high CPU resources, which could cause the processor to generate additional heat.
+Software causes:
 
-Based on the user's response, I would initially suspect that using the laptop on a bed may be restricting airflow and contributing to overheating. However, I would also investigate the cooling fan and software resource usage rather than assuming the cause.
+* High CPU usage from applications or background processes.
+* Malware or unwanted software.
+* Outdated drivers or Windows updates.
 
-3. Test the Theory to Determine the Cause
+- Test the Theory
 
-I would first test the hardware-related theory by observing the laptop while it is being used on the bed and then moving it to a hard, flat surface where the ventilation openings are not restricted.
+* Check Task Manager for high CPU, memory, or disk usage.
+* Inspect the vents and listen for unusual fan behaviour.
+* Run a Windows Security scan.
+* Check Windows Update and device drivers.
+* Check Event Viewer for errors around the time of the shutdown.
 
-I would also check whether the cooling fan is operating normally and inspect the ventilation openings for obvious blockage.
+ - Establish a Plan of Action
 
-For the software-related investigation, I would use Task Manager to check CPU utilisation and identify applications or processes that may be placing unusually high demands on the processor.
+If software is causing excessive resource usage, close or remove unnecessary applications and update the system. If overheating appears to be hardware-related, clean the vents and check the cooling fan and thermal system.
 
-I would compare the laptop's behaviour under these different conditions to determine which factor is contributing to the overheating.
+- Implement the Solution
 
-4. Establish a Plan of Action and Implement the Solution
+Clean blocked ventilation areas, ensure the cooling fan is working, update Windows and drivers, remove unnecessary background processes, and perform a security scan. If the problem continues, escalate the laptop for hardware inspection.
 
-If restricted airflow is found to be contributing to the overheating, I would advise the user to use the laptop on a hard, flat surface and keep the ventilation openings unobstructed.
+-  Verify Full System Functionality and Apply Preventive Measures
 
-If a software application is causing unusually high CPU usage, I would investigate that application further and close or troubleshoot it as appropriate.
+Monitor the laptop’s temperature and performance after the fix. Confirm that it no longer overheats or shuts down unexpectedly. Keep ventilation clear, maintain regular system updates, perform security scans, and avoid running unnecessary resource-intensive applications.
 
-If the cooling fan is found to have a hardware problem, the laptop would require appropriate hardware servicing rather than simply changing the way it is positioned.
+- Conclusion:
 
-5. Verify Full System Functionality and Implement Preventive Measures
-
-I would monitor the laptop during normal use after implementing the appropriate solution.
-
-If the laptop no longer becomes excessively hot and does not shut down unexpectedly, this would indicate that the solution has resolved the problem.
-
-As a preventive measure, I would advise the user to keep the laptop's ventilation openings unobstructed and monitor applications that place unusually high demands on the CPU.
-
-6. Document Findings, Actions, and Outcomes
-
-I would document the questions asked to identify the problem, the hardware and software causes considered, the tests performed, the evidence gathered, and the solution implemented.
-
-I would also record the results of monitoring the laptop afterward and whether the overheating and unexpected shutdown problem was resolved.
+Both hardware and software causes should be investigated because overheating can result from poor cooling, excessive system resource usage, malware, or driver and system issues.
 
 ## IT-005 - Computer Powers On but Windows Won't Boot
 
